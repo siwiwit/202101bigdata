@@ -1,8 +1,10 @@
 @startuml
-[Public]-(Authenticate)
-(Authenticate)>(Ask Forgot Password)
-[Public]-(Confirm Change Password Request)
-[Student]-(Browse Student Menu)
-[Academic System]-(Send Password Change Confirmation)
-(Ask Forgot Password)<(Confirm Change Password Request)
+actor client
+node app
+node car
+node tshirt
+
+car -> app
+app -> client
+client -> tshirt
 @enduml
