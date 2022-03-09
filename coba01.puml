@@ -1,0 +1,8 @@
+@startuml
+[Public]-(Authenticate)
+(Authenticate)>(Ask Forgot Password)
+[Public]-(Confirm Change Password Request)
+[Student]-(Browse Student Menu)
+[Academic System]-(Send Password Change Confirmation)
+(Ask Forgot Password)<(Confirm Change Password Request)
+@enduml
